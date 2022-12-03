@@ -8,14 +8,60 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isSuited = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        VStack{
+            Spacer()
+            Text("2023 наступает...")
+                .font(.largeTitle)
+                .opacity(isSuited ? 0 : 1)
+            ZStack {
+                Tree()
+                TreeAccessories()
+                    .opacity(isSuited ? 1 : 0)
+                if isSuited {
+                    Star()
+                        .transition(.transition)
+                }
+                Presents()
+                    .offset(x: isSuited ? 0 : 1000)
+                    .animation(.easeIn, value: isSuited)
+                Sparkles(isShowed: isSuited)
+            }
+            Text("С Новым годом!")
+                .font(.largeTitle)
+                .bold(true)
+                .foregroundColor(.yellow)
+                .opacity(isSuited ? 1 : 0)
+            
+            Button(action: {buttonAction()}) {
+                Text(isSuited ? "Вернуть" : "Нарядить")
+                    .font(.largeTitle)
+                    .fontWeight(.thin)
+                    .foregroundColor(isSuited ? .white : .black)
+            }
+            .buttonStyle(.bordered)
+            .padding()
         }
-        .padding()
+        .background(isSuited ? Color.indigo : Color.white)
+    }
+    
+    func buttonAction() {
+        withAnimation {
+            isSuited.toggle()
+        }
+    }
+}
+
+extension AnyTransition {
+    static var transition: AnyTransition {
+        let insertion = AnyTransition.move(edge: .leading)
+            .combined(with: .scale)
+        let removal = AnyTransition.scale
+            .combined(with: .opacity)
+        return .asymmetric(insertion: insertion, removal: removal)
     }
 }
 

@@ -11,6 +11,12 @@
 		278E12D429309320003D2B4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278E12D329309320003D2B4A /* ContentView.swift */; };
 		278E12D629309321003D2B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278E12D529309321003D2B4A /* Assets.xcassets */; };
 		278E12D929309321003D2B4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278E12D829309321003D2B4A /* Preview Assets.xcassets */; };
+		278E12E3293093C4003D2B4A /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278E12E2293093C4003D2B4A /* Tree.swift */; };
+		278E12E52930941C003D2B4A /* TreeAccessories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278E12E42930941C003D2B4A /* TreeAccessories.swift */; };
+		278E12E72930948A003D2B4A /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278E12E62930948A003D2B4A /* Star.swift */; };
+		278E12EB2930A090003D2B4A /* Sparkles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278E12EA2930A090003D2B4A /* Sparkles.swift */; };
+		278E12ED2930AFBF003D2B4A /* Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278E12EC2930AFBF003D2B4A /* Toy.swift */; };
+		27C2C443293B5DE40007316F /* Presents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C2C442293B5DE40007316F /* Presents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		278E12D329309320003D2B4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		278E12D529309321003D2B4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		278E12D829309321003D2B4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		278E12E2293093C4003D2B4A /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		278E12E42930941C003D2B4A /* TreeAccessories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeAccessories.swift; sourceTree = "<group>"; };
+		278E12E62930948A003D2B4A /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
+		278E12EA2930A090003D2B4A /* Sparkles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sparkles.swift; sourceTree = "<group>"; };
+		278E12EC2930AFBF003D2B4A /* Toy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toy.swift; sourceTree = "<group>"; };
+		27C2C442293B5DE40007316F /* Presents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,12 @@
 			children = (
 				278E12D129309320003D2B4A /* SwiftUIAnimationNGeometryApp.swift */,
 				278E12D329309320003D2B4A /* ContentView.swift */,
+				278E12E62930948A003D2B4A /* Star.swift */,
+				278E12E2293093C4003D2B4A /* Tree.swift */,
+				278E12E42930941C003D2B4A /* TreeAccessories.swift */,
+				27C2C442293B5DE40007316F /* Presents.swift */,
+				278E12EA2930A090003D2B4A /* Sparkles.swift */,
+				278E12EC2930AFBF003D2B4A /* Toy.swift */,
 				278E12D529309321003D2B4A /* Assets.xcassets */,
 				278E12D729309321003D2B4A /* Preview Content */,
 			);
@@ -137,7 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278E12E52930941C003D2B4A /* TreeAccessories.swift in Sources */,
+				278E12E3293093C4003D2B4A /* Tree.swift in Sources */,
+				278E12EB2930A090003D2B4A /* Sparkles.swift in Sources */,
 				278E12D429309320003D2B4A /* ContentView.swift in Sources */,
+				278E12E72930948A003D2B4A /* Star.swift in Sources */,
+				27C2C443293B5DE40007316F /* Presents.swift in Sources */,
+				278E12ED2930AFBF003D2B4A /* Toy.swift in Sources */,
 				278E12D229309320003D2B4A /* SwiftUIAnimationNGeometryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,9 +306,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = olgayourchooke.SwiftUIAnimationNGeometry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -311,9 +338,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = olgayourchooke.SwiftUIAnimationNGeometry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
